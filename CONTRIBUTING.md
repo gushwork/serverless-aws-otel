@@ -315,7 +315,7 @@ serverless deploy --verbose
 
 - **Issues**: Open an issue on [GitHub Issues](https://github.com/gushwork/serverless-aws-otel/issues)
 - **Discussions**: Start a discussion for questions or ideas
-- **Email**: Contact the maintainer at krcpr007@gmail.com
+- **Email**: Contact the maintainer at rajan.kumar@gushwork.ai
 
 ## Recognition
 

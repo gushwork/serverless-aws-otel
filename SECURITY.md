@@ -17,7 +17,7 @@ If you discover a security vulnerability in this project, please report it respo
 ### How to Report
 
 1. **Do NOT** open a public GitHub issue for security vulnerabilities
-2. Email the maintainer directly at: **krcpr007@gmail.com**
+2. Email the maintainer directly at: **rajan.kumar@gushwork.ai**
 3. Include the following information:
    - Description of the vulnerability
    - Steps to reproduce the issue
