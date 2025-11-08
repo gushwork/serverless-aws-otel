@@ -34,11 +34,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/krcpr007/serverless-aws-otel.git"
+    "url": "https://github.com/gushwork/serverless-aws-otel.git"
   },
-  "homepage": "https://github.com/krcpr007/serverless-aws-otel#readme",
+  "homepage": "https://github.com/gushwork/serverless-aws-otel#readme",
   "bugs": {
-    "url": "https://github.com/krcpr007/serverless-aws-otel/issues"
+    "url": "https://github.com/gushwork/serverless-aws-otel/issues"
   },
   "files": [
     "index.js",

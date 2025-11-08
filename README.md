@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/serverless-aws-otel.svg)](https://www.npmjs.com/package/serverless-aws-otel)
 [![npm downloads](https://img.shields.io/npm/dm/serverless-aws-otel.svg)](https://www.npmjs.com/package/serverless-aws-otel)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://img.shields.io/badge/tests-126%20passing-brightgreen.svg)](https://github.com/krcpr007/serverless-aws-otel)
+[![Tests](https://img.shields.io/badge/tests-126%20passing-brightgreen.svg)](https://github.com/gushwork/serverless-aws-otel)
 
 A Serverless plugin to automatically configure AWS OpenTelemetry layer and environment variables for Python Lambda functions.
 

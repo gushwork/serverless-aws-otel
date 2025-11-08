@@ -27,7 +27,7 @@ By participating in this project, you agree to maintain a respectful and inclusi
    ```
 3. **Add upstream remote**:
    ```bash
-   git remote add upstream https://github.com/krcpr007/serverless-aws-otel.git
+   git remote add upstream https://github.com/gushwork/serverless-aws-otel.git
    ```
 
 ## Development Setup
@@ -313,7 +313,7 @@ serverless deploy --verbose
 
 ## Questions or Need Help?
 
-- **Issues**: Open an issue on [GitHub Issues](https://github.com/krcpr007/serverless-aws-otel/issues)
+- **Issues**: Open an issue on [GitHub Issues](https://github.com/gushwork/serverless-aws-otel/issues)
 - **Discussions**: Start a discussion for questions or ideas
 - **Email**: Contact the maintainer at krcpr007@gmail.com
 
