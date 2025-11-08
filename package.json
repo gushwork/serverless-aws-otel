@@ -1,0 +1,62 @@
+{
+  "name": "serverless-aws-otel",
+  "version": "1.1.1",
+  "description": "A Serverless plugin to automatically configure AWS OpenTelemetry layer and environment variables for Python Lambda functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "serverless",
+    "aws",
+    "lambda",
+    "opentelemetry",
+    "otel",
+    "observability",
+    "tracing",
+    "metrics",
+    "logs"
+  ],
+  "author": {
+    "name": "Rajan Kumar",
+    "email": "krcpr007@gmail.com",
+    "github": "https://github.com/krcpr007",
+    "linkedin": "https://www.linkedin.com/in/krcpr007/"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "serverless": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krcpr007/serverless-aws-otel.git"
+  },
+  "homepage": "https://github.com/krcpr007/serverless-aws-otel#readme",
+  "bugs": {
+    "url": "https://github.com/krcpr007/serverless-aws-otel/issues"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE",
+    "DOCUMENTATION.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md"
+  ],
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.test.js"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+# example serverless.yml
+service: my-service
+
+frameworkVersion: '3'
+
+plugins:
+  - ./index.js
+
+custom:
+  stage: ${opt:stage, 'dev'}
+  globalVariables: ${ssm:/aws/reference/secretsmanager/${self:custom.stage}/global-variables}  # Optional: Use SSM to store global variables
+
+  # OpenTelemetry Plugin Configuration
+  otelPlugin:
+    # Override the default layer ARN (optional)
+    layerArn: 'arn:aws:lambda:us-east-1:615299751070:layer:AWSOpenTelemetryDistroPython:18'
+
+    # Override or add environment variables (optional)
+    envVars:
+      OTEL_LOGS_EXPORTER: 'otlp'  # Override default 'none'
+      OTEL_PYTHON_DISABLED_INSTRUMENTATIONS: 'logging,requests'  # Override default 'logging'
+      OTEL_RESOURCE_ATTRIBUTES: 'service.name=${self:service},service.version=2.0.0,service.environment=${self:custom.stage},team=backend'
+      CUSTOM_OTEL_SETTING: 'my-custom-value'
+      OTEL_PROPAGATORS: 'tracecontext,baggage,b3'  # Override default 'tracecontext,baggage,xray'
+
+provider:
+  name: aws
+  runtime: python3.13
+  # The plugin will automatically add the layer and environment variables
+
+functions:
+  hello:
+    handler: handler.hello

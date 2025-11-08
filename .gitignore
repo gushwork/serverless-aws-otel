@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Testing
+coverage/
+.nyc_output/
+*.log
+
+# Build artifacts
+*.tgz
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+
+# local files 
+PUBLISHING.md
+publish.sh
