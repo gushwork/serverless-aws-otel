@@ -27,7 +27,7 @@ class ServerlessAwsOtelPlugin {
       const defaultLayerArn = 'arn:aws:lambda:us-east-1:615299751070:layer:AWSOpenTelemetryDistroPython:18';
       const otelLayerArn = pluginConfig.layerArn || defaultLayerArn;
 
-      if (!otelLayerArn.includes('AWSOpenTelemetryDistroPython')) {
+      if (typeof otelLayerArn !== 'string' || !otelLayerArn.includes('AWSOpenTelemetryDistroPython')) {
         throw new Error('Invalid layer ARN. Please use the correct layer ARN for AWS OpenTelemetry Distro Python.');
       }
 

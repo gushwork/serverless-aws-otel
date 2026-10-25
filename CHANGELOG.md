@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Security
+- Marked the `serverless` peer dependency as optional (`peerDependenciesMeta`) so npm no longer auto-installs `serverless@3` and its vulnerable transitive tree (`tar`, `decompress`, `simple-git`, `adm-zip`, `uuid`, `aws-sdk`, etc.) into the plugin's lockfile. `npm audit` now reports 0 vulnerabilities. The `serverless@^3.0.0` requirement for consumers is unchanged.
+
+### Fixed
+- A non-string `custom.otelPlugin.layerArn` (e.g. an object) now raises the standard "Invalid layer ARN" error instead of an unhandled `TypeError`.
+
 ## [1.1.1] - 2024-11-08
 
 ### Added
