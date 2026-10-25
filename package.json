@@ -29,6 +29,11 @@
   "peerDependencies": {
     "serverless": "^3.0.0"
   },
+  "peerDependenciesMeta": {
+    "serverless": {
+      "optional": true
+    }
+  },
   "devDependencies": {
     "jest": "^29.7.0"
   },

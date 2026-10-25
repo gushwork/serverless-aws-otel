@@ -30,6 +30,19 @@ describe('Error Handling Tests', () => {
 
       expect(() => plugin.addOtelConfiguration()).toThrow();
     });
+
+    test.each([
+      ['object', { Ref: 'SomeLayer' }],
+      ['number', 42],
+      ['array', ['AWSOpenTelemetryDistroPython']]
+    ])('should reject non-string layer ARN (%s) with the validation error', (description, invalidArn) => {
+      serverless.service.custom.otelPlugin.layerArn = invalidArn;
+      const plugin = new ServerlessAwsOtelPlugin(serverless, options);
+
+      expect(() => plugin.addOtelConfiguration()).toThrow(
+        'Invalid layer ARN. Please use the correct layer ARN for AWS OpenTelemetry Distro Python.'
+      );
+    });
   });
 
   describe('Error logging and propagation', () => {
